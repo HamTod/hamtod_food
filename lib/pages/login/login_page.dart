@@ -152,6 +152,8 @@ class _LoginPageState extends State<LoginPage> {
         dot = 0;
         return _showMaterialDialog('ERROR', 'Invalid PIN. Please try again.');
       }else if(input.length == 6 && input == pass){
+        input = '';
+        dot = 0;
         Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => HomePage()));
       }
     });
