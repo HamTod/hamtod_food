@@ -4,6 +4,7 @@ import 'package:hamtod_food/pages/home/home_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
+  static const routeName = '/login';
   const LoginPage({Key? key}) : super(key: key);
 
   @override
@@ -154,7 +155,7 @@ class _LoginPageState extends State<LoginPage> {
       }else if(input.length == 6 && input == pass){
         input = '';
         dot = 0;
-        Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => HomePage()));
+        Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => HomeePage()));
       }
     });
 
