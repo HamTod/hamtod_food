@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hamtod_food/pages/home/home_page.dart';
+import 'package:hamtod_food/pages/home/home.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
@@ -155,7 +155,7 @@ class _LoginPageState extends State<LoginPage> {
       }else if(input.length == 6 && input == pass){
         input = '';
         dot = 0;
-        Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => HomeePage()));
+        Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => HomePage()));
       }
     });
 
