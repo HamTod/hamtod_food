@@ -24,7 +24,7 @@ class Detail extends StatelessWidget {
                 child: Image.asset('assets/images/${item.image}')),
             Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Text(" $item" ,style: GoogleFonts.mali(fontSize: 30,color: Colors.black87),),
+              child: Text("$item" ,style: GoogleFonts.mali(fontSize: 30,color: Colors.black87),),
             ),
           ],
         ),
