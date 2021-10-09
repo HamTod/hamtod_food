@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hamtod_food/pages/food/food_detail.dart';
+import 'package:hamtod_food/pages/food/food_list_page.dart';
 import 'package:hamtod_food/pages/home/home.dart';
 import 'package:hamtod_food/pages/login/login_page.dart';
 
@@ -35,8 +37,9 @@ class MyApp extends StatelessWidget {
           )),
       //home: LoginPage(),
       routes: {
-        LoginPage.routeName: (context) => const LoginPage(),
-        HomePage.routeName: (context) => const HomePage(),
+        '/login': (context) => const LoginPage(),
+        '/home': (context) => const HomePage(),
+        '/detail':(context) => const Detail(),
       },
       initialRoute: '/login',
     );
